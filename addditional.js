@@ -1,3 +1,11 @@
+let homeOffset=document.getElementById('home').offsetTop;
+let aboutOffset= document.getElementById('about').offsetTop-2*(header.getBoundingClientRect().height);
+let skillOffset= document.getElementById('skill').offsetTop-2*(header.getBoundingClientRect().height);
+let projectOffset= document.getElementById('project').offsetTop-2*(header.getBoundingClientRect().height);
+let contactOffset= document.getElementById('contact').offsetTop-2*(header.getBoundingClientRect().height);
+
+let scrollUpBtn= document.querySelector('.scroll-up-btn')
+
 window.scrollTo({
     top: 0,
 })
@@ -22,7 +30,12 @@ window.addEventListener('scroll',(e)=>{
         target='contact';
     }
     
-    
+    if(window.scrollY>2*(header.getBoundingClientRect().height)){
+        scrollUpBtn.classList.add('active-scroll-up-btn');
+    }
+    if(window.scrollY<2*(header.getBoundingClientRect().height)){
+        scrollUpBtn.classList.remove('active-scroll-up-btn');
+    }
     trackbtn.forEach((btn)=>{
         btn.classList.remove('active-track');
     })

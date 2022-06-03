@@ -4,13 +4,6 @@ const btnTabs=document.querySelectorAll('.btn-cat');
 const cats= document.querySelectorAll('.cat');
 const navLinks= document.querySelectorAll('.link');
 
-let homeOffset=document.getElementById('home').offsetTop;
-let aboutOffset= document.getElementById('about').offsetTop-2*(header.getBoundingClientRect().height);
-let skillOffset= document.getElementById('skill').offsetTop-2*(header.getBoundingClientRect().height);
-let projectOffset= document.getElementById('project').offsetTop-2*(header.getBoundingClientRect().height);
-let contactOffset= document.getElementById('contact').offsetTop-2*(header.getBoundingClientRect().height);
-
-
 menuBtn.addEventListener('click', ()=>{
     header.classList.toggle('show-menu');
 })

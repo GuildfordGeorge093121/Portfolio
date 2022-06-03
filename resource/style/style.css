@@ -23,6 +23,7 @@ body{
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
     color: #000;
+    overflow-x: hidden;
     
 }
 main{
@@ -252,7 +253,8 @@ img{
             left: 0;
             width: 100%;
             opacity: 0;
-            transition: opacity .3s;
+            visibility: hidden;
+            transition: opacity .3s, visibility .3s;
         }
         nav::before{
             content: "";
@@ -265,6 +267,7 @@ img{
             transition: height .6s;
         }
         .show-menu nav{
+            visibility: visible;
             opacity: 1;
             z-index: 120;
             transition: opacity .6s;
@@ -555,6 +558,11 @@ img{
     }
 }
 
+@media only screen and (max-width: 480px){
+    .btn-cat{
+        font-size: 1rem;
+    }
+}
 /* Project */
 #project .section-title{
     margin-bottom: 3rem;
@@ -657,7 +665,17 @@ img{
 .code-btn{
     background-color: var(--active-nav-color);
 }
-
+@media only screen and (max-width: 720px){
+    #project .cart-body{
+        top: 50%;
+        left:50%;
+        transform: translateY(-50%) translateX(-50%);
+        transition: top 0s;
+        width: 90%;
+        height: 90%;
+        border-radius: 5px;
+    }
+}
 @media only screen and (min-width: 460px) and (max-width: 850px){
     #project .d-grid{
         grid-template-columns: 1fr 1fr;
@@ -853,6 +871,12 @@ form input:focus> i{
     }
     
 }
+
+@media only screen and (max-width: 500px){
+    #contact .container{
+        max-width: 95% ;
+    }
+}
 /* Footer */
 footer{
     padding: 1rem 0;
@@ -912,12 +936,16 @@ footer .flex p{
 }
 
 .scroll-up-btn{
-    right: 0;
+    right: -100%;
     bottom: 10%;
     color: #fff;
     font: 1.5rem;
+    transition: right 3s;
 }
-
+.active-scroll-up-btn{
+    right: 0;
+    transition: right .5s;
+}
 
 
 /* Main Query */
