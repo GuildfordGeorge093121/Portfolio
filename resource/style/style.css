@@ -574,7 +574,7 @@ img{
         font-size: 1rem;
     }
     .categories{
-        height: 50vh;
+        height: 75vh;
     }
     .other-skill{
         grid-template-columns: repeat(2,1fr);
