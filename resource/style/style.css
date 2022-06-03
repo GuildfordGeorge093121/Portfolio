@@ -573,6 +573,11 @@ img{
     .btn-cat{
         font-size: 1rem;
     }
+    .other-skill{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        
+    }
 }
 /* Project */
 #project .section-title{
@@ -655,6 +660,7 @@ img{
 
 #project .button-group{
     margin-top: 2rem;
+    
 }
 
 #project .btn{
@@ -700,7 +706,7 @@ img{
     
 }
 
-@media only screen and (min-width: 460px) and (max-width: 572px){
+@media only screen and (min-width: 460px) and (max-width: 640px){
     #project .button-group{
         display: flex;
         flex-direction: column;
