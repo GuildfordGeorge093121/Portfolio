@@ -4,440 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="shortcut icon" href="./resource/port-logo.png" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="./resource/style/remixicon.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="./resource/style/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./resource/style/all.css"> -->
-    <script src="https://kit.fontawesome.com/8bd9552d91.js" crossorigin="anonymous"></script>
+    <title>TypeMaster</title>
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navigation-track flex">
-        <a href="#home" class="link track active-track"></a>
-        <a href="#about" class="link track"></a>
-        <a href="#skill" class="link track"></a>
-        <a href="#project" class="link track"></a>
-        <a href="#contact" class="link track"></a>
-    </div>
-    <a href="#home" class="scroll-up-btn">
-        <i class="fa-solid fa-angles-up"></i>
-    </a>
     <header>
         <div class="container">
-            <div class="nav-content flex">
-                <a href="#home" class="nav-brand link">
-                    <img src="./resource/port-logo-nav.png" alt="">
-                    George.
+            <nav>
+                <a href="#" class="nav-brand">
+                    <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd"><path fill="#F16718" d="M0 0h40v40H0z"/>
+                            <path d="M10.342 17c.182 0 .288-.11.288-.299v-8.03c0-.078.046-.125.122-.125h2.443c.182 0 .288-.11.288-.299V6.3c0-.189-.106-.299-.288-.299H5.288C5.106 6 5 6.11 5 6.299v1.948c0 .189.106.299.288.299h2.368c.076 0 .121.047.121.125v8.03c0 .189.106.299.288.299h2.277zm6.57 0c.183 0 .29-.11.29-.299v-5.547c0-.125.09-.141.151-.047l.94 1.619a.37.37 0 00.35.204h1.062a.37.37 0 00.35-.204l.94-1.619c.06-.094.152-.078.152.047v5.547c0 .189.106.299.288.299h2.277c.182 0 .288-.11.288-.299V6.3C24 6.11 23.894 6 23.712 6H21.45a.37.37 0 00-.349.204L19.265 9.3c-.045.094-.136.094-.182 0l-1.836-3.096a.37.37 0 00-.35-.204h-2.26c-.183 0-.289.11-.289.299V16.7c0 .189.106.299.289.299h2.276z" fill="#FFF" fill-rule="nonzero"/>
+                        </g>
+                    </svg>
                 </a>
-                <nav>
-                    <ul class="nav-menu flex">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link active-nav link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link link">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#skill" class="nav-link link">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#project" class="nav-link link">Project</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link link">Contact Me</a>
-                        </li>
-                    </ul>
-                </nav>
-                <button class="nav-icon" id="menu-btn">
-                    <i class="ri-close-line"></i>
-                    <i class="ri-menu-3-line"></i>
-                </button>
-                <div class="social tablet">
-                    <ul class="soc-media flex">
-                        <li>
-                            <a href="#">
-                                <i class="ri-linkedin-line"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="ri-mail-line"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="ri-facebook-line"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="ri-twitter-line"></i>
-                            </a>
-                        </li>
-                    </ul>
+                <div>
+                    <button class="btn light-blue-btn">Pre-order now</button>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
     <main>
-        <section class="hero" id="home">
+        <section class="hero">
             <div class="container">
-                <div class="hero-content">
-                    <h1>Hi, I'm &nbsp;&nbsp;<span>George Guildford Junior</span></h1>
-                    <h1 class="desc">A Full Stack Developer.</h1>
-                    <div class="button-group">
-                        <a href="#about" class="btn blue-btn link">About Me</a>
-                        <a href="#" class="btn light-btn">Download CV</a>
+                <div class="d-flex hero-detail">
+                    <div class="hero-content flex-item-center-text">
+                        <div>
+                            <h1>Typemaster Keyboard</h1>
+                            <p>Improve your productivity and gaming without breaking the bank. Upgrade to a high quality mechanical typing experience.</p>
+                            <div class="button-group">
+                                <button class="btn orange-btn">Pre-order now</button>
+                                <span>Release on 5/27</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-img">
+                        <img src="./assets/desktop/image-keyboard.jpg" alt="" class="desktop">
+                        <img src="./assets/tablet/image-keyboard.jpg" alt="" class="tablet">
+                        <img src="./assets/mobile/image-keyboard.jpg" alt="" class="mobile">
                     </div>
                     
                 </div>
+                
+                
+            </div>
+            <div class="design">
+                <svg width="255" height="240" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="255" height="240" rx="20" fill="#E8EFF2" fill-rule="evenodd"/>
+                </svg>
             </div>
         </section>
-
-        <section id="about">
+        <section class="hero-dl">
             <div class="container">
-                <div class="section-title">
-                    <h1 class="subtitle">About Me</h1>
-                    <div class="underline"></div>
-                </div>
-                <div class="flex">
-                   <div class="about-icon">
-                       <img src="./resource/Guildford George Junior_Photo.JPG" alt="" srcset="">
-                   </div>
-                   <div class="about-info">
-                       <div>
-                            <h4 class="tag">About me</h4>
-                            <p class="info-p">A <span>&nbsp;Web Design and Graphic Design Enthusiast</span>, born in Takoradi, Ghana</p>
-                            <p class="info-p">Currently, a graduate trainee with Amalitech, Ghana as a <span>Full Stack Developer</span></p>
-                            <p class="info-p">Aside coding and graphic design, I am an <span>Electrical and Electronic Engineer</span> who enjoys this professional</p>
-                       </div>
-                       <div>
-                            <h4 class="tag">Interest</h4>
-                            <a href="#">
-                                <div class="cart">
-                                    <div class="flex">
-                                        <div class="cart-icon">
-                                            <i class="ri-computer-line"></i>
-                                        </div>
-                                        <div class="cart-body">
-                                            <h3 class="cart-title">Web Developer</h3>
-                                            <p class="cart-desc">For Professional FrontEnd, BackEnd and FullStack Project</p>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="cart-link">
-                                        <i class="ri-arrow-right-up-line"></i>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="cart">
-                                    <div class="flex">
-                                        <div class="cart-icon">
-                                            <i class="ri-magic-line"></i>
-                                        </div>
-                                        <div class="cart-body">
-                                            <h3 class="cart-title">Graphic Designer </h3>
-                                            <p class="cart-desc">For Professional and Captivating Posters Design and Picture Editing</p>
-                                        </div>
-                                    </div>
-                                    <div class="cart-link">
-                                        <i class="ri-arrow-right-up-line"></i>
-                                    </div>
-                                </div>
-                            </a>
-                       </div>
-                       <div class="button-group">
-                            <a href="#contact" class="btn blue-btn link">Contact Me</a>
-                            <a href="" class="btn light-btn">Download CV</a>
-                        </div>
-                   </div>
-                </div>
-            </div>
-        </section>
-        <section id="skill">
-            <div class="container">
-                <div class="section-title">
-                    <h1 class="subtitle">Skills</h1>
-                    <div class="underline"></div>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-cat">
-                        <button class="btn-cat active-btn-cat">Frontend</button>
-                        <button class="btn-cat">Backend</button>
-                        <button class="btn-cat">Other Skill/Tools</button>
+                <div class="d-flex hero-bottom">
+                    <div class="d-flex">
+                        <div class="img-1"></div>
+                        <div class="img-2"></div>
                     </div>
-                    <div class="categories">
-                        <div class="cat active-cat">
-                            <h2 class="third-level-title">Frontend</h2>
-                            <div>
-                                <div class="skill-content-cat">
-                                    <div class="cat-content">
-                                        <img src="./resource/logos/html-5-logo.svg" alt="HTML Logo">
-                                    </div>
-                                    <div class="cat-content">
-                                        <img src="./resource/logos/css-3-logo.svg" alt="CSS Logo">
-                                    </div>
-                                    <div class="cat-content">
-                                        <img src="./resource/logos/javascript-logo.svg" alt="Javascript Logo">
-                                    </div>
-                                    <div class="cat-content">
-                                        <img src="./resource/logos/React-icon.svg" alt="Reactjs Logo">
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="hero-bottom-content flex-item-center-text">
+                        <div class="d-flex">
+                            <h2>mechanical wireless Keyboard</h2>
+                            <p>The Typemaster keyboard boasts 
+                                top-notch build and practical design. It offers a wide variety of switches and keycaps, along with reliable wireless connectivity.
+                            </p>
                         </div>
-                        <div class="cat">
-                            <h2 class="third-level-title">Backend</h2>
-                            <div>
-                                <div class="d-grid backend-skill">
-                                    <div class="cat-content">
-                                        <img src="./resource/logos/php-logo.svg" alt="PHP Logo">
-                                    </div>
-                                    <div class="cat-content">
-                                        <img src="./resource/logos/MySQL_logo.svg" alt="MySQL Logo">
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cat">
-                            <h2 class="third-level-title">Other Skills/Tool</h2>
-                            <div>
-                                <div class="d-grid other-skill">
-                                    <div class="cat-content">
-                                        <img src="./resource/logos/git.svg" alt="Git Logo">
-                                    </div>
-                                    <div class="cat-content">
-                                        <img src="./resource/logos/GitHub_Logo.png" alt="GitHub Logo">
-                                    </div>
-                                    <div class="cat-content">
-                                        <img src="./resource/logos/480px-Visual_Studio_Code_1.35_icon.svg.png" alt="VS Code Logo">
-                                    </div>
-                                    <div class="cat-content">
-                                        <img src="./resource/logos/Adobe_Photoshop_CC-logo.svg" alt="Photoshop Logo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="design">
+                        <svg width="255" height="240" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="255" height="240" rx="20" fill="#E8EFF2" fill-rule="evenodd"/>
+                        </svg>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="project">
+        <section class="category">
             <div class="container">
-                <div class="section-title">
-                    <h1 class="subtitle">Project</h1>
-                    <div class="underline"></div>
-                </div>
-                <div class="project-content">
-                    <div class="d-grid">
-                        <div class="grid-item">
-                            <div class="cart">
-                                <div class="cart-body">
-                                    <h3>Harry Potter Character Sort</h3>
-                                    <p>An Harry Potter Character Information Website For Sorting Characters By House, Stage(Student or Staff) An Ancestry </p>
-                                    <div class="button-group">
-                                        <a href="#contact" class="btn live-btn">
-                                            <i class="ri-eye-line"></i> Live Demo
-                                        </a>
-                                        <a href="" class="btn code-btn">
-                                           <span>&lt;&sol;&gt;&nbsp;&nbsp;</span>Code
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="d-grid">
+                    <div class="cart d-flex">
+                        <div>
+                            <svg width="26" height="21" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.673 17.755l2.253 2.939H7.51l2.253-2.939h5.91zM23.183.45a1.96 1.96 0 011.96 1.96v12.08a1.96 1.96 0 01-1.96 1.96H1.96A1.96 1.96 0 010 14.489V2.41A1.96 1.96 0 011.96.448z" fill="#FFF" fill-rule="nonzero"/>
+                        </svg>
                         </div>
-                        <div class="grid-item">
-                            <div class="cart">
-                                <div class="cart-body">
-                                    <h3>Marvel Comics</h3>
-                                    <p>A Marvel comic Related Information Website</p>
-                                    <div class="button-group">
-                                        <a href="#contact" class="btn live-btn">
-                                            <i class="ri-eye-line"></i> Live Demo
-                                        </a>
-                                        <a href="" class="btn code-btn">
-                                           <span>&lt;&sol;&gt;&nbsp;&nbsp;</span>Code
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <h3 class="cart-title">Highly compatible</h3>
+                        <p class="cart-body">Easy to use and works well with all major computer brands, gaming consoles and mobile devices. Plug & play, no installation or driver needed.</p>
+                    </div>
+                    <div class="cart d-flex">
+                        <div>
+                            <svg width="19" height="28" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.947 13.93l5.974-5.999a1.653 1.653 0 00-.25-2.537L10.076.282a1.663 1.663 0 00-2.592 1.37v7.942L3.533 5.6a1.641 1.641 0 00-2.326-.01 1.652 1.652 0 00-.01 2.336l5.953 6.002-5.953 6.002a1.653 1.653 0 00.01 2.338 1.64 1.64 0 002.326-.01l3.95-3.994v7.941c0 .61.348 1.172.887 1.459a1.659 1.659 0 001.705-.09l7.596-5.11a1.655 1.655 0 00.25-2.538l-5.974-5.996zm-1.111-9.173l3.358 2.26-3.358 3.372V4.757zm0 18.348v-5.632l3.358 3.372-3.358 2.26z" fill="#FFF" fill-rule="nonzero"/>
+                        </svg>
                         </div>
-                        <div class="grid-item">
-                            <div class="cart">
-                                <div class="cart-body">
-                                    <h3>maze-Grid solver</h3>
-                                    <p>A maze solving website</p>
-                                    <div class="button-group">
-                                        <a href="#contact" class="btn live-btn">
-                                            <i class="ri-eye-line"></i> Live Demo
-                                        </a>
-                                        <a href="" class="btn code-btn">
-                                           <span>&lt;&sol;&gt;&nbsp;&nbsp;</span>Code
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <h3 class="cart-title">Wireless with bluetooth</h3>
+                        <p class="cart-body">Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away. Simply plug the unifying receiver into your computer.</p>
+                    </div>
+                    <div class="cart d-flex">
+                        <div>
+                            <svg width="32" height="21" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29.655 4.333h-.322V4A3.67 3.67 0 0025.667.333h-22A3.67 3.67 0 000 4v12.667a3.67 3.67 0 003.667 3.666h22a3.67 3.67 0 003.666-3.666v-.334h.322A2.336 2.336 0 0031.988 14V6.667a2.336 2.336 0 00-2.333-2.334zm-20.322 11a1 1 0 01-1 1H5a1 1 0 01-1-1v-10a1 1 0 011-1h3.333a1 1 0 011 1v10zm8 0a1 1 0 01-1 1H13a1 1 0 01-1-1v-10a1 1 0 011-1h3.333a1 1 0 011 1v10zm8 0a1 1 0 01-1 1H21a1 1 0 01-1-1v-10a1 1 0 011-1h3.333a1 1 0 011 1v10z" fill="#FFF" fill-rule="nonzero"/>
+                        </svg>
                         </div>
-                        <div class="grid-item">
-                            <div class="cart">
-                                <div class="cart-body">
-                                    <h3>Book Word Processing</h3>
-                                    <p>A word processing for books</p>
-                                    <div class="button-group">
-                                        <a href="#contact" class="btn live-btn">
-                                            <i class="ri-eye-line"></i> Live Demo
-                                        </a>
-                                        <a href="" class="btn code-btn">
-                                           <span>&lt;&sol;&gt;&nbsp;&nbsp;</span>Code
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <h3 class="cart-title">High capacity battery</h3>
+                        <p class="cart-body">Equipped with a long-lasting built-in battery, you'll never have to spend a dime on replaceable ones.  Enjoy 40 hours of usage time between charges.</p>
+                    </div>
+                    <div class="cart d-flex">
+                        <div>
+                            <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 28v1.667A2.345 2.345 0 0117.667 32h-3.334C13.213 32 12 31.147 12 29.28V28h8zm5.47-3.947l1.845 1.846a1 1 0 11-1.415 1.414l-1.845-1.845a1 1 0 111.414-1.415zm-17.523 0a1 1 0 010 1.415L6.1 27.313a.997.997 0 01-1.414 0 1 1 0 010-1.414l1.845-1.846a1 1 0 011.415 0zM14 6.88c2.813-.6 5.693.093 7.88 1.867A9.297 9.297 0 0125.333 16c0 2.88-1.306 5.547-3.56 7.333-.92.72-1.52 1.654-1.706 2.667v.013C20.04 26 20.027 26 20 26h-8l-.047.002-.046.011V26c-.187-1.053-.734-1.96-1.52-2.547-2.907-2.2-4.267-5.8-3.52-9.426.733-3.534 3.6-6.414 7.133-7.147zM31 15a1 1 0 010 2h-2.61a1 1 0 010-2H31zM3.61 15a1 1 0 010 2H1a1 1 0 010-2h2.61zm12.723-5c-.546 0-1 .453-1 1 0 .547.454 1 1 1A3.665 3.665 0 0120 15.667c0 .546.453 1 1 1 .547 0 1-.454 1-1A5.679 5.679 0 0016.333 10zm10.982-5.315a1 1 0 010 1.415l-1.846 1.845a1.003 1.003 0 01-1.414 0 1 1 0 010-1.414L25.9 4.685a1 1 0 011.415 0zm-21.214 0l1.846 1.846a1 1 0 11-1.415 1.414L4.687 6.1A1 1 0 116.1 4.685zM16 0a1 1 0 011 1v2.61a1 1 0 01-2 0V1a1 1 0 011-1z" fill="#FFF" fill-rule="nonzero"/>
+                        </svg>
                         </div>
-                        <div class="grid-item">
-                            <div class="cart">
-                                <div class="cart-body">
-                                    <h3>KTB Shipping</h3>
-                                    <p>An Landing Page <br><em>UI Design: Dribble.com</em></p>
-                                    <div class="button-group">
-                                        <a href="#contact" class="btn live-btn">
-                                            <i class="ri-eye-line"></i> Live Demo
-                                        </a>
-                                        <a href="" class="btn code-btn">
-                                           <span>&lt;&sol;&gt;&nbsp;&nbsp;</span>Code
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="cart">
-                                <div class="cart-body">
-                                    <h3>Sculpt</h3>
-                                    <p>A LifeStyle e-commerce website <br><em>UI Design: Dribble.com</em></p>
-                                    <div class="button-group">
-                                        <a href="#contact" class="btn live-btn">
-                                            <i class="ri-eye-line"></i> Live Demo
-                                        </a>
-                                        <a href="" class="btn code-btn">
-                                           <span>&lt;&sol;&gt;&nbsp;&nbsp;</span>Code
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <h3 class="cart-title">RGB backlit modes</h3>
+                        <p class="cart-body">Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the dark and helps you type in low light conditions.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact">
-            <div class="container">
-                <div class="section-title">
-                    <h1 class="subtitle">Contact Me</h1>
-                    <div class="underline"></div>
-                </div>
-                <div class="flex">
-                    <div class="contact-info">
-                        <div class="contact-info-cart">
-                            <i class="ri-map-pin-line"></i>
-                            <div class="info-cart-det">
-                                <h3>Location</h3>
-                                <address>
-                                    <a href="https://www.ghanapostgps.com/map/#GA-059-3733">GA-059-3733</a><br>
-                                    Awudome,Accra,Ghana
-                                </address>
-                            </div>
-                        </div>
-                        <div class="contact-info-cart">
-                            <i class="ri-mail-line"></i>
-                            <div class="info-cart-det">
-                                <h3>Email Address</h3>
-                                <a href="mailto:george.guildford@amalitech.org">george.guildford@amalitech.org</a>
-                            </div>
-                        </div>
-                        <div class="contact-info-cart">
-                            <i class="ri-phone-line"></i>
-                            <div class="info-cart-det">
-                                <h3>Phone Number</h3>
-                                <a href="tel:+233240827887">+233 24 082 78 87</a><br>
-                                <a href="tel:+233206246320">+233 20 624 63 20</a>  
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <form action="index.html" class="contact-form" method="post">
-                        <div class="form-sec flex">
-                            <div>
-                                <input type="text" name="firstname" id="" placeholder="Firstname">
-                                <i class="ri-user-line"></i>
-                            </div>
-                            <div>
-                                <input type="text" name="surname" id="" placeholder="Surname">
-                                <i class="ri-user-line"></i>
-                            </div>
-                            <div>
-                                <input type="text" name="othertname" id="" placeholder="Othername">
-                                <i class="ri-user-line"></i>
-                            </div>
-                        </div>
-                        <div class="form-sec">
-                            <div>
-                                <input type="text" name="subject" id="" placeholder="Subject" class="subject">
-                                <i class="ri-edit-2-line"></i>
-                            </div>
-                        </div>
-                        <textarea name="message" id="message" cols="30" rows="10" class="" placeholder="Enter Message"></textarea>
-                        <button>Submit</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
     </main>
-
     <footer>
-        <div class="container">
-            <div class="flex">
-                <a href="#home" class="nav-brand link">
-                    <img src="./resource/port-logo-nav.png" alt="">
-                    George.
-                </a>
-                <p>&copy;2022 All Right Resevered</p>
-                <div class="social">
-                    <ul class="soc-media flex">
-                        <li>
-                            <a href="#">
-                                <i class="ri-linkedin-line"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="ri-mail-line"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="ri-facebook-line"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="ri-twitter-line"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <p><span>Typemaster 2021</span> | All Rights Reserved</p>
     </footer>
-    
-    <script src="./main.js"></script>
-    <script src="./addditional.js"></script>
 </body>
 </html>
