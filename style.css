@@ -15,6 +15,9 @@
 }
 
 /* UNIVERSAL STYLE */
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-size: 16px;
     color: var(--mainColor);
@@ -121,7 +124,8 @@ div> img{
 }
 /* HEADER */
 header{
-    padding: 2rem 0 2rem 0;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
 }
 nav{
     display: flex;
